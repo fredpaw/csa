@@ -24,7 +24,7 @@ button,
 .ui-btn {
 	font-size: 1em;
 	line-height: 1.3;
-	     font-family: Microsoft YaHei /*{global-font-family}*/;
+	 font-family: Microsoft YaHei /*{global-font-family}*/;
 }
 legend,
 .ui-input-text input,
@@ -250,7 +250,7 @@ html .ui-bar-a .ui-body-inherit,
 html .ui-body-a .ui-body-inherit,
 html body .ui-group-theme-a .ui-body-inherit,
 html .ui-panel-page-container-a {
-	background-color: #ffffff /*{a-body-background-color}*/;
+	background-color: #efefef /*{a-body-background-color}*/;
 	border-color: #efefef /*{a-body-border}*/;
 	color: #a0a0a0 /*{a-body-color}*/;
 	text-shadow: 0 /*{a-body-shadow-x}*/ 0px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/;
@@ -744,4 +744,3 @@ button[disabled],
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
