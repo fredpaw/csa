@@ -1,0 +1,31 @@
+/**
+*	All customize style locates here.
+*/
+
+/* General Style */
+
+.font-normal {
+	font-weight:normal;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.full-width {
+	width:100%;
+}
+
+/* Header Style */
+.header-button {
+	border:none;
+}
+
+/* Content Style */
+.account-bg {
+	background:url("images/account-bg.jpg") no-repeat;
+	background-size:100%;
+}
+/* Footer Style */
+
+/* Icon Style */
