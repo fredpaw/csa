@@ -1,0 +1,137 @@
+/**
+* Rules Page Style
+*/
+
+.rules {
+    background:@white;
+    
+    h3 {
+        margin:0px;
+    	color:white;
+    	font-weight:normal;
+    	font-size:16px;
+    	text-shadow:none;
+    	height:28px;
+    	line-height:28px;
+    	width:130px;
+    	background-color:@theme-color;
+    	padding-left:20px;
+    }
+    
+    .rule-1 {
+        padding-top:10px;
+    	width:100%;
+    	background:url("images/rules-bg.jpg") no-repeat;
+    	background-size:100%;
+    	margin-bottom:15px;
+    	
+    	img {
+    	    width:100%;
+    	}
+    }
+    
+    .rule-2 {
+        .rule-table {
+            margin:10px;
+            
+            table {
+                text-shadow:none;
+            	color:@gray-base;
+            	border-collapse:collapse;
+            	border:solid 1px @gray-lighter;
+            	width:100%;
+            	
+            	.pink {
+            	    background-color:@rule-pink;
+            	}
+            	
+            	thead {
+            	    td {
+                    	font-weight:bold;
+                    	color:white;
+                    	background-color:@theme-color;
+                    	text-align:center;
+                    	border:solid 1px @gray-lighter;
+                    	@media (max-width:@screen-xs-max) {
+                    	    font-size:12px;
+                    	}
+                    	
+                    	@media (min-width:@screen-md-min) {
+                    	    font-size:14px;
+                    	}
+            	    }
+            	}
+            	
+            	tr {
+            	    height:40px;
+            	    border:solid 1px @gray-lighter;
+            	    
+            	    td {
+            	        border:solid 1px @gray-lighter;
+                    	padding:0px 5px;
+                    	@media (max-width:@screen-xs-max) {
+                    	    font-size:12px;
+                    	}
+                    	
+                    	@media (min-width:@screen-md-min) {
+                    	    font-size:14px;
+                    	}
+            	    }
+            	}
+            }
+        }
+    }
+    
+    .rule-3 {
+        ul {
+            list-style:none;
+            @media (max-width:@screen-xs-max) {
+        	    padding-left:10px;
+        	}
+        	
+        	@media (min-width:@screen-md-min) {
+        	    padding-left:20px;
+        	}
+            li {
+                color:@gray-base;
+                margin-top:5px;
+                margin-bottom:5px;
+                @media (max-width:@screen-xs-max) {
+            	    font-size:12px;
+            	}
+            	
+            	@media (min-width:@screen-md-min) {
+            	    font-size:14px;
+            	}
+            	
+            	&:before {
+            	    content:"• ";
+            	    color:@theme-color;
+            	    font-size:22px;
+            	    @media (max-width:@screen-xs-max) {
+                	    margin-right:5px;
+                	}
+                	
+                	@media (min-width:@screen-md-min) {
+                	    margin-right:20px;
+                	}
+            	}
+            }
+        }
+    }
+    
+    .rule-4 {
+        padding-bottom:10px;
+        p {
+            color:@gray-base;
+            margin-left:30px;
+            @media (max-width:@screen-xs-max) {
+        	    font-size:12px;
+        	}
+        	
+        	@media (min-width:@screen-md-min) {
+        	    font-size:14px;
+        	}
+        }
+    }
+}
