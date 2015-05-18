@@ -15,7 +15,7 @@
 	<script src="themes/all.js"></script>
 </head>
 <body>
-	<div data-role="page" data-theme="a">
+	<div data-role="page" data-theme="b">
 		<div class="no-border" data-role="header" data-position="inline"  data-theme="b">
 			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-delete no-border font-normal">|</a>
 			<h1 class="font-normal" id="page-title" style="text-align:normal">提交图文留学</h1>
@@ -30,12 +30,12 @@
 				<li data-icon="false"><a href="#">添加到桌面</a></li>
 			</ul>
 		</div>
-		<div data-role="content dairy-form" data-theme="a">
+		<div data-role="content dairy-form" data-theme="b">
 			<form action="" method="post" enctype="multipart/form-data">
 				<label>请输入内容</label>
 				<textarea>请输入文字</textarea>
-				<a href="javascript:void(0);">添加图片<input type="file" name="pic"/></a>
-				<input type="submit" name="submit" value="提交留言" />
+				<input type="file" id="file-upload" name="pic"/>
+				<input class="text-normal" type="submit" name="submit" value="提交留言" />
 			</form>
 		</div>
 	</div>
