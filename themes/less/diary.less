@@ -8,5 +8,33 @@ form {
     textarea {
         min-height:200px;
     }
-    
+}
+
+.comment-block {
+    padding:10px 20px;
+    .single-comment {
+        padding-left:30px;
+        min-height:125px;
+        height:125px;
+        background:url("images/comment-border.png");
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("images/comment-border.@2x.png");
+        background-size: 21px 125px;
+        }
+        background-repeat: no-repeat;
+        label {
+            color:@theme-color;
+        }
+        .comment {
+            background-color:@white;
+            border-radius:8px;
+            padding:1px 10px;
+            color:@gray-base;
+            text-shadow:none;
+            box-shadow: 1px 1px 1px @box-shadow;
+        }
+    }
 }

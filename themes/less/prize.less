@@ -37,12 +37,16 @@
 
 .prize-detail {
     .prize {
-        p {
-            color:black;
+        background:@white;
+        .ui-block-a {
+            background:url("images/prize-bg.png") center center no-repeat;
+                
+            @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+            only screen and (-moz-min-device-pixel-ratio: 1.5),
+            only screen and (-o-min-device-pixel-ratio: 3/2),
+            only screen and (min-device-pixel-ratio: 1.5) {
+                background-image: url("images/process-bg.@2x.jpg") center center no-repeat;
+            }
         }
     }
-}
-
-#prize-name {
-    color:black;
 }

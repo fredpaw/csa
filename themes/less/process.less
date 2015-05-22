@@ -1,0 +1,153 @@
+/**
+* Process page style locates here
+*/
+
+// Arrow style
+.process-right {
+    margin-top:5px;
+    margin-bottom:5px;
+    .box_arrow_left {
+    	position: relative;
+    	width:130px;
+    	border-bottom-right-radius:6.4px;
+    	-webkit-border-bottom-right-radius:6.4px;
+    	border-top-right-radius:6.4px;
+    	-webkit-top-bottom-right-radius:6.4px;
+        p {
+            height:40px;
+            line-height:40px;
+            text-shadow:none;
+        }
+        &:after {
+        	right: 100%;
+        	top: 50%;
+        	border: solid transparent;
+        	content: " ";
+        	height: 0;
+        	width: 0;
+        	position: absolute;
+        	pointer-events: none;
+        	border-color: rgba(255, 255, 255, 0);
+        	border-width: 20px;
+        	margin-top: -20px;
+        }
+    }
+}
+
+.process-left {
+    float:right;
+    margin-top:5px;
+    margin-bottom:5px;
+    .box_arrow_right {
+    	position: relative;
+    	width:130px;
+    	padding:0px;
+    	border-bottom-left-radius:6.4px;
+    	-webkit-border-bottom-left-radius:6.4px;
+    	border-top-left-radius:6.4px;
+    	-webkit-top-bottom-left-radius:6.4px;
+        p {
+            margin:0px;
+            height:40px;
+            line-height:40px;
+            text-shadow:none;
+            text-align:right;
+        }
+        &:after {
+        	left: 100%;
+        	top: 50%;
+        	border: solid transparent;
+        	content: " ";
+        	height: 0;
+        	width: 0;
+        	position: absolute;
+        	pointer-events: none;
+        	border-color: rgba(255, 255, 255, 0);
+        	border-width: 20px;
+        	margin-top: -20px;
+        }
+    }
+}
+
+.process-bg {
+    font-size:15px;
+    background:url("images/process-bg.jpg") center repeat-y;
+        
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("images/process-bg.@2x.jpg") center repeat-y;
+    }
+    .ui-grid-a {        
+        .ui-block-a {
+            padding-right:40px;
+        }
+        
+        .ui-block-b {
+            padding-left:40px;
+        }
+    }
+}
+
+.normal {
+    background:url("images/white-dot.png") center center no-repeat;
+        
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("images/white-dot.@2x.png") center center no-repeat;
+    }
+    
+    .box_arrow_left {
+        background-color:@white;
+        p {
+            color:@gray-base;
+        }
+        &:after {
+            border-right-color:@white;
+        }
+    }
+    
+    .box_arrow_right {
+        background-color:@white;
+        p {
+            color:@gray-base;
+        }
+        &:after {
+            border-left-color:@white;
+        }
+    }
+}
+
+.active {
+    background:url("images/orange-dot.png") center center no-repeat;
+        
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url("images/orange-dot.@2x.png") center center no-repeat;
+    }
+    
+    .box_arrow_left {
+        background-color:@theme-color;
+        p {
+            color:@white;
+        }
+        &:after {
+            border-right-color:@theme-color;
+        }
+    }
+    
+    .box_arrow_right {
+        background-color:@theme-color;
+        p {
+            color:@white;
+        }
+        &:after {
+            border-left-color:@theme-color;
+        }
+    }
+}
