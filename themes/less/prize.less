@@ -38,14 +38,129 @@
 .prize-detail {
     .prize {
         background:@white;
+        padding:5px;
+        margin-bottom:20px;
         .ui-block-a {
-            background:url("images/prize-bg.png") center center no-repeat;
+            text-align:center;
+            width:30%;
+            padding-top:5px;
+            img {
+                width:100%;
+                max-width:200px;
+            }
+        }
+        
+        .ui-block-b {
+            @media (max-width:@screen-xxs-max) {
+                padding-left:10px;
+                width:40%;
+            }
+            
+            @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                padding-left:20px;
+                padding-top:5px;
+                width:45%;
+            }
+            
+            @media (min-width:@screen-sm-min) {
+                padding-left:20px;
+                padding-top:10px;
+                width:45%;
+            }
+            h3 {
+                color:@gray-base;
+                margin:5px 0px;
+                font-size:12px;
+                @media (max-width:@screen-xxs-max) {
+                    font-size:12px;
+                }
                 
-            @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-            only screen and (-moz-min-device-pixel-ratio: 1.5),
-            only screen and (-o-min-device-pixel-ratio: 3/2),
-            only screen and (min-device-pixel-ratio: 1.5) {
-                background-image: url("images/process-bg.@2x.jpg") center center no-repeat;
+                @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                    font-size:15px;
+                }
+                @media (min-width:@screen-sm-min) {
+                    font-size:16px;
+                }
+            }
+            p {
+                margin:5px 0px;
+                @media (max-width:@screen-xxs-max) {
+                    font-size:10px;
+                }
+                
+                @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                    font-size:13px;
+                }
+                @media (min-width:@screen-sm-min) {
+                    font-size:15px;
+                }
+            }
+            p:last-child {
+                @media (max-width:@screen-xxs-max) {
+                    margin-top:15px;
+                }
+                
+                @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                    margin-top:15px;
+                }
+                @media (min-width:@screen-sm-min) {
+                    margin-top:25px;
+                }
+            }
+        }
+        
+        .ui-block-c {
+            padding:10px 0px 5px 15px;
+            @media (max-width:@screen-xxs-max) {
+                width:30%;
+            }
+            
+            @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                width:25%;
+            }
+            @media (min-width:@screen-sm-min) {
+                width:25%;
+            }
+            p {
+                font-weight:bold;
+                color:@prize-color;
+                margin:0px;
+                height:20px;
+                line-height:20px;
+                @media (max-width:@screen-xxs-max) {
+                    font-size:12px;
+                }
+                
+                @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                    font-size:14px;
+                }
+                
+                @media (min-width:@screen-sm-min) {
+                    margin-top:10px;
+                    font-size:16px;
+                }
+            }
+            a {
+                text-align:center;
+                margin:0px;
+                padding:5px 10px;
+                width:40px;
+                color:@white;
+                background:@theme-color;
+                @media (max-width:@screen-xxs-max) {
+                    margin-top:10px;
+                    font-size:12px;
+                }
+                
+                @media (max-width:@screen-xs-max) and (min-width:@screen-xs-min) {
+                    margin-top:20px;
+                    font-size:14px;
+                }
+                
+                @media (min-width:@screen-sm-min) {
+                    margin-top:30px;
+                    font-size:16px;
+                }
             }
         }
     }

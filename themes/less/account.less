@@ -4,9 +4,32 @@
 
 #page-content {
     .account-bg {
+        background:url("images/sign-bg.jpg") no-repeat;
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url("images/sign-bg.@2x.png") no-repeat;
+        }
+        background-size:100%;
         img {
             width:100%;
+        }
+        .unsign {
             cursor:pointer;
+        }
+    }
+    
+    .account-list {
+        li {
+            background:@white;
+            padding-left:35px;
+            border:solid 1px #efefef;
+            a {
+                font-weight:normal;
+                border:none;
+                padding-left:0px;
+            }
         }
     }
 }

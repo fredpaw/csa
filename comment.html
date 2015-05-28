@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>提交图文留学</title>
+	<title>留言管理</title>
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="themes/iconpack/dist/jqm-icon-pack-fa.css" />
 	<link rel="stylesheet" href="themes/animate.css" />
@@ -30,23 +30,25 @@
 				<li data-icon="false"><a href="#">添加到桌面</a></li>
 			</ul>
 		</div>
-		<div data-role="content dairy-form" data-theme="b">
-			<form action="" method="post" enctype="multipart/form-data">
-				<label class="ui-icon-text-diary">请输入留言信息</label>
-				<textarea>请输入文字</textarea>
-				<input class="text-normal" type="submit" name="submit" value="提交留言" />
-			</form>
-			<div class="comment-block">
-				<div class="single-comment">
-					<label>我：2014-12-26 11：05：27</label>
-					<div class="comment">
-						<p>您好</p>
+		<div id="page-content">
+			<div data-role="content" data-theme="b" class="page-background">
+				<form action="" method="post" enctype="multipart/form-data">
+					<label><img src="themes/iconpack/csa/input-comment.svg"/>&nbsp;&nbsp;请输入留言信息</label>
+					<textarea class="input-comment comment-light">请输入文字</textarea>
+					<input class="text-normal" type="submit" name="submit" value="提交留言" />
+				</form>
+				<div class="comment-block">
+					<div class="single-comment">
+						<label>我：2014-12-26 11：05：27</label>
+						<div class="comment">
+							<p>您好</p>
+						</div>
 					</div>
-				</div>
-				<div class="single-comment">
-					<label>我：2014-12-26 11：05：27</label>
-					<div class="comment">
-						<p>您好</p>
+					<div class="single-comment">
+						<label>我：2014-12-26 11：05：27</label>
+						<div class="comment">
+							<p>您好</p>
+						</div>
 					</div>
 				</div>
 			</div>

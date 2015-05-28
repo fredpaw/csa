@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline"  data-theme="b">
+		<div data-role="header" data-position="inline"  data-theme="b" class="no-border">
 			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-delete no-border font-normal">|</a>
 			<h1 class="font-normal" style="text-align:normal" id="page-title">用户中心</h1>
 			<button class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-ellipsis-v ui-btn-icon-notext no-border" id="header-button"></button>
@@ -33,15 +33,26 @@
 		<div id="page-content">
 			<div style="background:#fff; height:10px;"></div>
 			<div class="account-bg text-center" data-position="inline">
-				<img src="themes/images/unsign.@2x.jpg" class="score-bg"/>
+				<img src="themes/images/click.@2x.png" class="unsign"/>
+				<img src="themes/images/score.@2x.png" class="sign-score no-show animated fadeInUp"/>
+				<img src="themes/images/signed.@2x.png" class="signed no-show"/>
 			</div>
 			<div data-role="content" data-theme="a" class="page-background">
-				<ul data-role="listview" data-inset="true">
-					<li><a href="#">Acura</a></li>
-					<li><a href="#">Audi</a></li>
-					<li><a href="#">BMW</a></li>
-					<li><a href="#">Cadillac</a>
-					</li><li><a href="#">Ferrari</a></li>
+				<ul data-role="listview" data-inset="true" class="account-list">
+					<li class="ui-btn-icon-left ui-icon-username">|&nbsp;&nbsp;用户名称：</li>
+					<li class="ui-btn-icon-left ui-icon-total-score"><a href="#">|&nbsp;&nbsp;累计积分：</a></li>
+					<li class="ui-btn-icon-left ui-icon-consultant">|&nbsp;&nbsp;留学顾问：</li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="account-list">
+					<li class="ui-btn-icon-left ui-icon-process"><a href="#">|&nbsp;&nbsp;进程查看</a></li>
+					<li class="ui-btn-icon-left ui-icon-share"><a href="#">|&nbsp;&nbsp;分享管理</a></li>
+					<li class="ui-btn-icon-left ui-icon-image-diary"><a href="#">|&nbsp;&nbsp;图文留学日志</a></li>
+					<li class="ui-btn-icon-left ui-icon-text-diary"><a href="#">|&nbsp;&nbsp;文字留学日志</a></li>
+					<li class="ui-btn-icon-left ui-icon-comment"><a href="#">|&nbsp;&nbsp;留学管理</a></li>
+					<li class="ui-btn-icon-left ui-icon-shop"><a href="#">|&nbsp;&nbsp;积分商城</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="account-list">
+					<li class="ui-btn-icon-left ui-icon-person-center"><a href="#">|&nbsp;&nbsp;个人信息</a></li>
 				</ul>
 			</div>
 		</div>

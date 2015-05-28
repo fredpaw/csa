@@ -15,28 +15,31 @@
 	<script src="themes/all.js"></script>
 </head>
 <body>
-	<div data-role="page" data-theme="b">
-		<div class="no-border" data-role="header" data-position="inline"  data-theme="b">
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-delete no-border font-normal">|</a>
-			<h1 class="font-normal" id="page-title" style="text-align:normal">提交图文留学</h1>
-			<button class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-ellipsis-v ui-btn-icon-notext no-border" id="header-button"></button>
-			<ul data-role="listview" data-inset="false" id="header-menu" class="ui-no-icon">
-				<li data-icon="false"><a href="#">发送给朋友</a></li>
-				<li data-icon="false"><a href="#">分享到朋友圈</a></li>
-				<li data-icon="false"><a href="#">收藏</a></li>
-				<li data-icon="false"><a href="#">复制链接</a></li>
-				<li data-icon="false"><a href="#">在浏览器中打开</a></li>
-				<li data-icon="false"><a href="#">分享到手机QQ</a></li>
-				<li data-icon="false"><a href="#">添加到桌面</a></li>
-			</ul>
-		</div>
-		<div data-role="content dairy-form" data-theme="b">
-			<form action="" method="post" enctype="multipart/form-data">
-				<label>请输入内容</label>
-				<textarea>请输入文字</textarea>
-				<input type="file" id="file-upload" name="pic"/>
-				<input class="text-normal" type="submit" name="submit" value="提交留言" />
-			</form>
+	<div id="page-content">
+		<div data-role="page" data-theme="b">
+			<div class="no-border" data-role="header" data-position="inline"  data-theme="b">
+				<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-delete no-border font-normal">|</a>
+				<h1 class="font-normal" id="page-title" style="text-align:normal">提交图文留学</h1>
+				<button class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-ellipsis-v ui-btn-icon-notext no-border" id="header-button"></button>
+				<ul data-role="listview" data-inset="false" id="header-menu" class="ui-no-icon">
+					<li data-icon="false"><a href="#">发送给朋友</a></li>
+					<li data-icon="false"><a href="#">分享到朋友圈</a></li>
+					<li data-icon="false"><a href="#">收藏</a></li>
+					<li data-icon="false"><a href="#">复制链接</a></li>
+					<li data-icon="false"><a href="#">在浏览器中打开</a></li>
+					<li data-icon="false"><a href="#">分享到手机QQ</a></li>
+					<li data-icon="false"><a href="#">添加到桌面</a></li>
+				</ul>
+			</div>
+			<div data-role="content" data-theme="b" class="page-background">
+				<form action="" method="post" enctype="multipart/form-data">
+					<label><img src="themes/iconpack/csa/input-comment.svg"/>&nbsp;&nbsp;请输入留言信息</label>
+					<textarea class="input-comment comment-light">请输入文字</textarea>
+					<button class="upload-button" onclick="$('#file-upload').trigger('click');">上传图片</button><span id="file-name">未选择文件</span>
+					<input type="file" id="file-upload" name="pic"/>
+					<input class="text-normal" type="submit" name="submit" value="提交留言" />
+				</form>
+			</div>
 		</div>
 	</div>
 </body>
